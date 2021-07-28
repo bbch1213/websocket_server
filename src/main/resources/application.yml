@@ -1,0 +1,19 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
